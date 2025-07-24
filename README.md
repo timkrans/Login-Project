@@ -19,7 +19,7 @@ A simple web application in Go that provides user authentication with signup, lo
 ---
 ![This is the invalid page](screenshots/invalid.png)
 ---
-![This shows the sign up failed](screenshots/invalid.png)
+![This shows the sign up failed](screenshots/exists.png)
 
 ## Project Structure
 ```
