@@ -70,7 +70,7 @@ func signupHandler(w http.ResponseWriter, r *http.Request) {
 
 		_, err = db.Exec("INSERT INTO users(username, password) VALUES (?, ?)", username, string(hashedPassword))
 		if err != nil {
-			http.Error(w, "Username already exists", http.StatusConflict)
+			tmpl.ExecuteTemplate(w, "exists.html", nil)
 			return
 		}
 		http.Redirect(w, r, "/login", http.StatusSeeOther)
@@ -137,6 +137,7 @@ func notFoundRedirectHandler(w http.ResponseWriter, r *http.Request) {
 		"/login":   true,
 		"/logout":  true,
 		"/welcome": true,
+		"/exists": true,
 	}
 	if len(path) >= 8 && path[:8] == "/static/" {
 		http.ServeFile(w, r, path)
