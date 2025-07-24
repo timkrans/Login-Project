@@ -11,10 +11,10 @@ A simple web application in Go that provides user authentication with signup, lo
 - Simple, modern UI with dark mode styling
 
 ## Screenshots
-- **Signup:** `/signup` — Register a new account
-- **Login:** `/login` — Login with your credentials
-- **Welcome:** `/welcome` — Protected page after login
-- **Invalid Login:** `/invalid` — Shown on failed login
+![This is the login page](screenshots/login.png)
+![This is the sign up page](screenshots/signUp.png)
+![This is the welcome page](screenshots/welcome.png)
+![This is the invalid page](screenshots/invalid.png)
 
 ## Project Structure
 ```
