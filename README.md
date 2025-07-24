@@ -12,9 +12,14 @@ A simple web application in Go that provides user authentication with signup, lo
 
 ## Screenshots
 ![This is the login page](screenshots/login.png)
+---
 ![This is the sign up page](screenshots/signUp.png)
+---
 ![This is the welcome page](screenshots/welcome.png)
+---
 ![This is the invalid page](screenshots/invalid.png)
+---
+![This shows the sign up failed](screenshots/invalid.png)
 
 ## Project Structure
 ```
@@ -25,7 +30,8 @@ Login-project/
   └──style.css     
   templates/           
   ├──signup.html        
-  ├──login.html        
+  ├──login.html
+  ├──exists.html          
   ├──welcome.html       
   └──invalid.html    
 ```
